@@ -1,0 +1,396 @@
+type: collection.insomnia.rest/5.0
+name: Prova Senai
+meta:
+  id: wrk_f6559831f5dd4dc0b3eea8a1cf4822fb
+  created: 1760648269018
+  modified: 1760648269018
+collection:
+  - name: Professor
+    meta:
+      id: fld_f76bf273e6874e9b868c9863b55cdb89
+      created: 1760648277081
+      modified: 1760648306282
+      sortKey: -1760648277081
+    children:
+      - url: localhost:3001/professores/login
+        name: Get Professor
+        meta:
+          id: req_67b56cd03991430b8b181735c15703a5
+          created: 1760648279074
+          modified: 1760658013455
+          isPrivate: false
+          sortKey: -1760648279074
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.1.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: localhost:3001/professores/1
+        name: Get Professor Id
+        meta:
+          id: req_f076904ead774b0fa39b8bd7600cca24
+          created: 1760648301670
+          modified: 1760648395196
+          isPrivate: false
+          sortKey: -1760648301670
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.1.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: localhost:3001/professores/login
+        name: Post Professor
+        meta:
+          id: req_5708b701a63c46c8b8f65326137e7c54
+          created: 1760648318628
+          modified: 1760658021310
+          isPrivate: false
+          sortKey: -1760648318628
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"email": "teste@email.com",
+            	"senha": "teste"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.1.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: localhost:3001/professores/1
+        name: PATCH Professor
+        meta:
+          id: req_a7041c02ffdf408f8456bc57d750d323
+          created: 1760648400801
+          modified: 1760648433179
+          isPrivate: false
+          sortKey: -1760648400801
+        method: PATCH
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"nome": "Leonardo",
+            	"email": "leo9@email.com",
+            	"senha": "teste321"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.1.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: localhost:3001/professores/6
+        name: Delete Professor
+        meta:
+          id: req_6703c20a46af4d67a51064c6f490e588
+          created: 1760648443027
+          modified: 1760648462739
+          isPrivate: false
+          sortKey: -1760648443027
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/11.1.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: Turmas
+    meta:
+      id: fld_fe9b97093e21485fb79af06db5b67a7a
+      created: 1760648477145
+      modified: 1760648788847
+      sortKey: -1760648477145
+    children:
+      - url: localhost:3001/turmas
+        name: Get Turmas
+        meta:
+          id: req_cdf7469f57f64006a83059d661c054f2
+          created: 1760648489376
+          modified: 1760648511701
+          isPrivate: false
+          sortKey: -1760648489376
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.1.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: localhost:3001/turmas/1
+        name: Get Turmas ID
+        meta:
+          id: req_1c7b42988238451fb3047712f8e103d1
+          created: 1760648497645
+          modified: 1760648518436
+          isPrivate: false
+          sortKey: -1760648497645
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.1.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: localhost:3001/turmas
+        name: POST turmas
+        meta:
+          id: req_8e64bec5012648c48a0ad9ef87476274
+          created: 1760648713005
+          modified: 1760648783444
+          isPrivate: false
+          sortKey: -1760648713005
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"nome": "Teste",
+            	"professor": 1
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.1.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: localhost:3001/turmas/2
+        name: Delete Turmas
+        meta:
+          id: req_ea55761ae3f34ed88ea39e816f3c9bd9
+          created: 1760648792113
+          modified: 1760648855759
+          isPrivate: false
+          sortKey: -1760648713205
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/11.1.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: localhost:3001/turmas/2
+        name: Patch Turmas
+        meta:
+          id: req_bb368af64f5146ae8bcb6f9ccf869983
+          created: 1760648792457
+          modified: 1760648862380
+          isPrivate: false
+          sortKey: -1760648713105
+        method: PATCH
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"nome": "Teste2",
+            	"professor": 1
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.1.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: Atividades
+    meta:
+      id: fld_e6a5e8b9180e44a2bf9fba613767f34a
+      created: 1760648878689
+      modified: 1760649788954
+      sortKey: -1760648878689
+    children:
+      - url: localhost:3001/atividades
+        name: Get Atividades
+        meta:
+          id: req_c927699b6e124b64bdb042676089a8c7
+          created: 1760648991778
+          modified: 1760649144692
+          isPrivate: false
+          sortKey: -1760648991778
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.1.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: localhost:3001/atividades/1
+        name: Get Atividade By ID
+        meta:
+          id: req_f0770f768e934f50bc9ce391545d2537
+          created: 1760649148120
+          modified: 1760649168258
+          isPrivate: false
+          sortKey: -1760649148120
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.1.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: localhost:3001/atividades/
+        name: Post Atividade
+        meta:
+          id: req_9e62cf8261334362862426b082028617
+          created: 1760649259192
+          modified: 1760649299376
+          isPrivate: false
+          sortKey: -1760649259192
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"titulo": "teste",
+            	"turmaId": 1
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.1.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: localhost:3001/atividades/1
+        name: PATCH atividade
+        meta:
+          id: req_8ca16a1ad2bf4d86be50600e33f92148
+          created: 1760649397461
+          modified: 1760649416751
+          isPrivate: false
+          sortKey: -1760649397461
+        method: PATCH
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"titulo": "2",
+            	"turmaId": 1
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.1.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: localhost:3001/atividades/1
+        name: Delete Atividade
+        meta:
+          id: req_060ad001eb0849789454c02bb6a2bc86
+          created: 1760649425467
+          modified: 1760649435611
+          isPrivate: false
+          sortKey: -1760649425467
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/11.1.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_e8eb30eda637e8d6b9495b28def58f3a5ec7d607
+    created: 1760648269022
+    modified: 1760648269022
+environments:
+  name: Base Environment
+  meta:
+    id: env_e8eb30eda637e8d6b9495b28def58f3a5ec7d607
+    created: 1760648269020
+    modified: 1760648269020
+    isPrivate: false
