@@ -53,7 +53,7 @@ Etapas de Instalação e Execução
 Siga as etapas abaixo para configurar e executar o sistema em ambiente local:
 
 1. Clonar o Repositório
-git clone https://github.com/GuilhermeCanina/escolaavaliacao.git
+git clone https://github.com/Leozin99/escolaavaliacao.git
 cd escolaavaliacao
 
 2. Instalar as Dependências
