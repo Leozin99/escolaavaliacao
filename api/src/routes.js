@@ -6,7 +6,7 @@ const TurmasController = require("./controllers/TurmasController");
 const AtividadesController = require("./controllers/AtividadesController");
 
 routes.get("/", (req, res) => {
-  res.send("Feito com amor por Guilherme Canina");
+  res.send("Feito por Léo");
 });
 
 routes.get("/professores", ProfessorController.getProfessores);
